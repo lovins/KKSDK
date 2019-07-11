@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tapque.kkcnads">
+    <uses-permission android:name="andrnetworkSecurityConfigoid.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 如果需要精确定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="com.tapque.adscn.MyApplication"
+        android:networkSecurityConfig="@xml/network_config"
+        android:hardwareAccelerated="true"
+        >
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+
+        <provider
+            android:name="com.thinking.analyselibrary.TDContentProvider"
+            android:authorities="${applicationId}.TDContentProvider"
+            android:enabled="true"
+            android:exported="false" />
+        <meta-data
+            android:name="com.thinkingdata.analytics.android.MainProcessName"
+            android:value="${applicationId}" />
+
+
+        <service android:name="com.tapque.toolscn.DownloadService"/>
+
+
+    </application>
+
+</manifest>
+
+

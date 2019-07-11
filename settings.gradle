@@ -1,0 +1,3 @@
+include ':KKSDK', ':kkiap', ':kkcnads', ':bytedanceadapter', ':yumiadapter', ':sigmobadapter', ':yumiads', ':facebookutils'
+
+

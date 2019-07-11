@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tapque.yumiadapter" >
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!--此权限受 Android 系统限制，若无此权限可能导致部分机型对下载类广告无法直接下载，国内渠道必须添加，Googleplay（一般为直接跳转型广告）可不加-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--此权限受 Android 系统限制，请添加，如果不添加将影响广告收益-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<application>
+
+</application>
+
+</manifest>

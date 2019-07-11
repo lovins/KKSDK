@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    compileOnly files('libs/unity-classes.jar')
+    implementation 'androidx.multidex:multidex:2.0.1'
+//    compileOnly files('libs/layaconch.jar')
+    implementation('com.mopub:mopub-sdk:5.7.1@aar') {
+        transitive = true
+        exclude module: 'libAvid-mopub' // To exclude AVID
+        exclude module: 'moat-mobile-app-kit' // To exclude Moat
+    }
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.2'
+    //adjust analytics  require
+    implementation 'com.adjust.sdk:adjust-android:4.18.0'
+    implementation 'com.adjust.sdk:adjust-android-imei:4.18.0'
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+    //thinkingData analytics require
+    implementation 'com.thinking.analyselibrary:ThinkingAnalyticsSDK:1.1.7'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    // Google (AdMob)
+    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+    implementation 'com.mopub.mediation:admob:17.2.1.0'
+    // Facebook Audience Network
+    implementation 'com.facebook.android:audience-network-sdk:5.4.0'
+    implementation 'com.mopub.mediation:facebookaudiencenetwork:5.4.0.0'
+    // Unity Ads
+    implementation 'com.unity3d.ads:unity-ads:3.1.0'
+    implementation 'com.mopub.mediation:unityads:3.1.0.0'
+    // Vungle
+    implementation 'com.github.vungle:vungle-android-sdk:6.3.24'
+    implementation 'com.mopub.mediation:vungle:6.3.24.3'
+// ironSource
+    implementation 'com.ironsource.sdk:mediationsdk:6.8.4@jar'
+    implementation 'com.mopub.mediation:ironsource:6.8.4.0'
+
+    implementation 'com.tapjoy:tapjoy-android-sdk:12.2.1@aar'
+    implementation 'com.mopub.mediation:tapjoy:12.2.1.1'
+
+    implementation 'com.applovin:applovin-sdk:9.7.1'
+    implementation 'com.mopub.mediation:applovin:9.7.1.0'
+
+    implementation files('libs/adt.aar')
+}

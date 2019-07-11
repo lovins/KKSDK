@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "692764532291",
+    "firebase_url": "https://block-fit-3d-24430796.firebaseio.com",
+    "project_id": "block-fit-3d-24430796",
+    "storage_bucket": "block-fit-3d-24430796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692764532291:android:d45fce4cc869b000",
+        "android_client_info": {
+          "package_name": "com.playmil.blockfit3d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692764532291-3c31ghp6mngqpkmjugi5um6fcg1hcor3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCthRZpKdyO0V8OHumEMN6382cESQANQ8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692764532291-3c31ghp6mngqpkmjugi5um6fcg1hcor3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

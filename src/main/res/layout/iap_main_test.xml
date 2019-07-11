@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="GEM1"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/gem1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="GEM2"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/gem2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="GEM3"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/gem3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="GEM4"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/gem4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="GEM5"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/gem5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="Remove_Ads"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/remove_ads"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="WEEKLY Subscription"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/weekly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <Button
+        android:text="Cancle subcription"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

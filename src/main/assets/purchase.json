@@ -1,0 +1,38 @@
+[
+  {
+    "testProduct":"true",
+    "purchaseType":"0",
+    "purchaseItemName": "测试",
+    "purchaseContent":"测试订单",
+    "purchaseTotalPrice":"0.01",
+    "purchaseRealPrice":"0.01",
+    "sequence":"1"
+  },
+  {
+    "testProduct":"true",
+    "purchaseType":"1",
+    "purchaseItemName": "test2",
+    "purchaseContent":"去广告",
+    "purchaseTotalPrice":"0.01",
+    "purchaseRealPrice":"0.01",
+    "sequence":"2"
+  },
+  {
+    "testProduct":"false",
+    "purchaseType":"0",
+    "purchaseItemName": "小宝箱",
+    "purchaseContent":"限时折扣哦",
+    "purchaseTotalPrice":"39",
+    "purchaseRealPrice":"29",
+    "sequence":"3"
+  },
+  {
+    "testProduct":"false",
+    "purchaseType":"0",
+    "purchaseItemName": "大宝箱",
+    "purchaseContent":"限时折扣哦",
+    "purchaseTotalPrice":"49",
+    "purchaseRealPrice":"35",
+    "sequence":"4"
+  }
+]

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mopub.mobileads.MoPubView
+        android:layout_gravity="center"
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/editor"
+        />
+    <TextView
+        android:textSize="20dp"
+        android:textColor="#ff00ff"
+        android:text="广告状态:"
+        android:id="@+id/logText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="showBanner"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/showBannerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <Button
+        android:text="hideBanner"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/hideBannerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <Button
+        android:text="showInterstitial"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/showInterstitialBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <Button
+        android:text="requestOtherInterstitial"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/requestOtherInterstitialBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <Button
+        android:text="showOtherInterstitial"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/showOtherInterstitialBtn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/enable_auto_play"
+            android:textAllCaps="false"
+            android:text="Enable Auto Play"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="showRewardVideo"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:id="@+id/showRewardVideoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
